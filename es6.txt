@@ -1,0 +1,16 @@
+//Rest operator
+ES6 provides a new kind of parameter so-called rest parameter that has a prefix of three dots (...). A rest parameter allows you to represent an indefinite number of arguments as an array. See the following syntax:
+
+function fn(a,b,...args) {
+   //...
+}
+Code language: JavaScript (javascript)
+The last parameter (args) is prefixed with the three dots ( ...). It’s called a rest parameter ( ...args).
+
+All the arguments you pass to the function will map to the parameter list. In the syntax above, the first argument maps to a, the second one maps to b, and the third, the fourth, etc., will be stored in the rest parameter args as an array.
+-----------------------------------------------------------------------------------------------
+//ES6 Destructuring Assignment:
+the ES6 destructuring assignment that allows you to destructure an array into individual variables.
+
+ES6 introduces a new feature called destructuring assignment, which lets you destructure properties of an object or elements of an array into individual variables.
+------------------------------------------------------------------------------------------------
