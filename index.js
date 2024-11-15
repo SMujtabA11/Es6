@@ -76,3 +76,69 @@ function restFnct(a,b,c,...d){
 }
 
 restFnct(1,2,3,4,5,6,7,8,9);
+//Arrow Function
+let arr = [2,44,5,77]
+let newArr = ()=>{
+    console.log(arr)
+}
+newArr();
+//===============================================================================================================
+
+//Enhanced Object literals
+let firstName = "Ali";
+let roll= 12;
+let sex = "male";
+
+let student={
+    firstName,
+    roll,
+    sex,
+    sum:function(){
+        console.log(2*2)
+    }
+}
+console.log(student.firstName);
+console.log(student.sum());
+//===============================================================================================================
+//Iterators
+let arr2 =[2,3,4,55,67]
+let itr = arr2[Symbol.iterator]();
+console.log(itr.next().value)
+console.log(itr.next().done)
+itr.next();
+console.log(itr.next())
+console.log(itr.next())
+console.log(itr.next())
+//===============================================================================================================
+//for Of
+let arr3=["apple","mango","banana"];
+for(const num of arr3){
+    console.log(arr3)
+}
+
+let str = "hello";
+
+for (const char of str) {
+  console.log(char);
+}
+//===============================================================================================================
+//Generators function
+function* generatorsFnct() {
+    console.log("first1")
+    yield
+    console.log("second")
+    yield
+    console.log("third")
+    yield
+    console.log("forth")
+
+}
+let gen = generatorsFnct();
+gen.next();
+console.log("Program is passed after 1st call")
+gen.next();
+console.log("Program is passed after 2nd call")
+gen.next();
+console.log("Program is passed after 3rd call")
+gen.next()
+
